@@ -1,0 +1,30 @@
+#include<string>
+#include<iostream>
+using namespace std;
+struct Type
+{
+    string str1;
+    string str2;
+    int num;
+};
+
+Type fun()
+{
+    Type type1
+    {
+        .str1 = "",
+        .str2 = "",
+        .num = 0
+    };
+    Type *p = &type1;
+    p->str1 = "c++ is quite ";
+    p->str2 = "difficult but magical";
+    p->num = 233;
+    return type1;
+}
+
+int main()
+{
+    fun();
+    return 0;
+}
